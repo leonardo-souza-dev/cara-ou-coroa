@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Cara ou coroa",
   "main": "server.js",
-  "author": "",
+  "author": "Leonardo Souza",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
   },
   "repository": {
     "type": "git",
