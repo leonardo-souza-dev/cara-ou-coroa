@@ -1,7 +1,5 @@
 const express = require('express')
 const app = express()
-const swaggerJsDoc = require('swagger-jsdoc')
-const swaggerUi = require('swagger-ui-express')
 
 const port = process.env.PORT || 3000
 
@@ -14,20 +12,6 @@ const options = {
   }
 }
 
-//const swaggerSpec = swaggerJsDoc(options)
-//app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
-
-// Routes
-/**
- * @swagger
- * 
- * /api:
- *   get:
- *     description: Obter cara ou coroa aleatoriamente
- *     responses:
- *       200:
- *         description: Sucesso
- */
 app.get('/api', (req, res) => {
     let resultado = between(0,2);
     res.json(resultado == 1 ? { resultado: 'cara' } : { resultado: 'coroa' })
